@@ -1,9 +1,6 @@
 FROM golang:1.12.7
 
-RUN adduser --disabled-password --gecos '' api
-USER api
-
-WORKDIR /go/src/app
+WORKDIR /go/src/github.com/kazekim/devcurateapi-go/api
 COPY . .
 
 RUN go get github.com/pilu/fresh

@@ -6,7 +6,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - './api:/go/src/app'
+      - './api:/go/src/github.com/kazekim/devcurateapi-go/api'
     depends_on:
       - 'mongo'
   mongo:
